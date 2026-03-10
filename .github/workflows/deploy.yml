@@ -23,5 +23,7 @@ jobs:
       - name: Deploy Files using rsync
         run: |
           rsync -avz \
+            --exclude=".git" \
+            --exclude=".github" \
             -e "ssh -i ~/.ssh/deploy_key" \
             ./ ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/web/
