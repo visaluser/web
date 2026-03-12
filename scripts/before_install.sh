@@ -1,2 +1,3 @@
 #!/bin/bash
-rm -rf /var/www/web/*
+echo "Cleaning web directory"
+rm -rf /var/www/web-app/*
