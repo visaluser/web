@@ -5,7 +5,7 @@ file_exists_behavior: OVERWRITE
 
 files:
   - source: /
-    destination: /var/www/web-app/
+    destination: /usr/share/nginx/web
     
 hooks:
   BeforeInstall:
